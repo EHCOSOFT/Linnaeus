@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="sub-wrap">
+                <div class="container">
+                    <div class="mypage-wrap">
+                        <ul class="mypage-menu">
+                            <li><a href="#">주문 조회</a></li>
+                            <li class="active"><a href="#">교환/반품</a></li>
+                            <li><a href="#">정보 수정</a></li>
+                        </ul>
+                        <div class="mypage-cont">
+                            <h3>교환/반품</h3>
+                            <ul class="order-list">
+                                <li>
+                                    <div class="order-list-none">
+                                        <p>교환/반품하신 상품이 없습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-product">
+                                        <div class="order-pro-top">
+                                            <p>주문번호<a href="">20240709050111</a></p>
+                                            <span class="date">2024-07-30</span>
+                                        </div>
+                                        <div class="order-product-list">
+                                            <ul>
+                                                <li class="order-product-item">
+                                                    <div class="order-product-img">
+                                                        <img src="img/product-img-01.png" alt="상품이미지">
+                                                    </div>
+                                                    <div class="order-product-info">
+                                                        <h6>ACOUSTIC STAND ALONE</h6>
+                                                        <p>$80.00</p>
+                                                    </div>
+                                                    <div class="situation">배송대기</div>
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-md btn-outline-gray open-modal" data-modal-id="exchangeModal">교환</button>
+                                                        <button type="button"
+                                                            class="btn btn-md btn-darkgray">반품</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-product">
+                                        <div class="order-pro-top">
+                                            <p>주문번호<a href="">20240709050111</a></p>
+                                            <span class="date">2024-07-30</span>
+                                        </div>
+                                        <div class="order-product-list">
+                                            <ul>
+                                                <li class="order-product-item">
+                                                    <div class="order-product-img">
+                                                        <img src="img/product-img-01.png" alt="상품이미지">
+                                                    </div>
+                                                    <div class="order-product-info">
+                                                        <h6>ACOUSTIC STAND ALONE</h6>
+                                                        <p>$80.00</p>
+                                                    </div>
+                                                    <div class="situation red">반품 진행중</div>
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-md btn-outline-gray">교환</button>
+                                                        <button type="button"
+                                                            class="btn btn-md btn-darkgray">반품</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+    <!-- S : exchangeModal :: 교환/반품 -->
+    <div id="exchangeModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>교환/반품</h4>
+                    <div class="input-wrap">
+                        <div class="select-group">
+                            <label for="">구분<span>*</span></label>
+                            <select name="" id="">
+                                <option value="구분을 선택하세요.">구분을 선택하세요.</option>
+                                <option value="교환">교환</option>
+                                <option value="반품">반품</option>
+                            </select>
+                        </div>
+                        <div class="text-group">
+                            <label for="">사유</label>
+                            <textarea name="" id="" placeholder="사유를 입력해주세요."></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-gray btn-md btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-primary btn-md">신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : exchangeModal -->
+
+    <!-- S : exchangeInfoModal :: 교환/반품신청 완료 -->
+    <div id="exchangeInfoModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>교환/반품 신청이<br>완료되었습니다.</p>
+                    <button type="button" class="btn btn-primary btn-md btn-modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : exchangeInfoModal -->
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

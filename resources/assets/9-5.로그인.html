@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <section class="login-wrap">
+                <div class="container">
+                    <div class="login">
+                        <h1>로그인</h1>
+                        <p>신규 사용자이신가요? <a href="#">회원가입</a></p>
+                        <div class="input-wrap">
+                            <!-- input error 시 class .input-group.error 후 error 문구 배치-->
+                            <div class="input-group error">
+                                <label for="">아이디</label>
+                                <input type="text" placeholder="아이디를 입력하세요.">
+                                <small>아이디가 일치하지 않습니다.</small>
+                            </div>
+                            <div class="input-group">
+                                <label for="">비밀번호</label>
+                                <input type="password" placeholder="비밀번호를 입력하세요.">
+                                <small>비밀번호가 일치하지 않습니다.</small>
+                            </div>
+                        </div>
+                        <ul class="login-find">
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary btn-lg btn-login">로그인</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

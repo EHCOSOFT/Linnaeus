@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="sub-wrap">
+                <div class="container">
+                    <h2>공지사항</h2>
+                    <div class="cont-table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 10%;">
+                                <col style="width: auto;">
+                                <col style="width: 30%; ">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>등록일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="ta-left">[공지] 배송 관련</td>
+                                    <td>2024-10-01</td>
+                                </tr>
+                                <tr class="no-content">
+                                    <td colspan="3">작성된 글이 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <button type="button" class="prev btn-ico"><img src="img/ico/i-arrow-left.svg" alt="이전"></button>
+                            <div class="control">
+                                <input type="text" maxlength="1" value="1">
+                                <span>/</span>
+                                <span>2</span>
+                            </div>
+                            <button type="button" class="next btn-ico"><img src="img/ico/i-arrow-right.svg" alt="다음"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

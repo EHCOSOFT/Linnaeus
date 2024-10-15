@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <div class="sub-wrap">
+                <div class="container">
+                    <div class="cart-wrap">
+                        <div class="cart-list-wrap">
+                            <div class="cart-list-top">
+                                <h4>장바구니</h4>
+                                <button type="button" class="btn-check-product-del">선택된 제품 삭제</button>
+                            </div>
+                            <div class="cart-list">
+                                <ul>
+                                    <!-- 장바구니에 담긴 제품이 없을 때-->
+                                    <li class="cart-list-none">
+                                        <p>장바구니에 담긴 제품이 없습니다.</p>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="check01">
+                                            <label for="check01"></label>
+                                        </div>
+                                        <div class="cart-product-img">
+                                            <img src="img/product-img-01.png" alt="">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h6>ACOUSTIC STAND ALONE ACOUSTIC STAND ALONE</h6>
+                                            <div class="dl-group">
+                                                <dl>
+                                                    <dt>금액</dt>
+                                                    <dd>$30.00</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>수량</dt>
+                                                    <dd>
+                                                        <select name="" id="">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="check01">
+                                            <label for="check01"></label>
+                                        </div>
+                                        <div class="cart-product-img">
+                                            <img src="img/product-img-01.png" alt="">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h6>ACOUSTIC STAND ALONE ACOUSTIC STAND ALONE</h6>
+                                            <div class="dl-group">
+                                                <dl>
+                                                    <dt>금액</dt>
+                                                    <dd>$30.00</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>수량</dt>
+                                                    <dd>
+                                                        <select name="" id="">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-list-item">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="check01">
+                                            <label for="check01"></label>
+                                        </div>
+                                        <div class="cart-product-img">
+                                            <img src="img/product-img-01.png" alt="">
+                                        </div>
+                                        <div class="cart-product-info">
+                                            <h6>ACOUSTIC STAND ALONE ACOUSTIC STAND ALONE</h6>
+                                            <div class="dl-group">
+                                                <dl>
+                                                    <dt>금액</dt>
+                                                    <dd>$30.00</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>수량</dt>
+                                                    <dd>
+                                                        <select name="" id="">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <div class="cart-total-top">
+                                <h5>합계</h5>
+                            </div>
+                            <div class="cart-total-details">
+                                <dl>
+                                    <dt>상품 전체(1)</dt>
+                                    <dd>$2,997.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt>부가세</dt>
+                                    <dd>$299.70</dd>
+                                </dl>
+                                <dl>
+                                    <dt>배송비</dt>
+                                    <dd>$100.00</dd>
+                                </dl>
+                            </div>
+                            <div class="cart-total-price">
+                                <dl>
+                                    <dt>총합</dt>
+                                    <dd>$3,396.7</dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="btn btn-primary">주문하기</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 기본적으로 해당 영역은 존재하지 않음 -->
+                <!-- 추후 상품이 늘어났을 때, 추천 상품 컨텐츠 영역 -->
+                <div class="reco-product">
+                    <div class="container">
+                        <h2>추천제품</h2>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <a href="#" class="product">
+                                    <div class="product-img">
+                                        <img src="img/product-img-01.png" alt="">
+                                    </div>
+                                    <div class="product-text">
+                                        <h6 class="product-title">ACOUSTIC STAND ALONE</h6>
+                                        <b class="product-price">₩1,499,000</b>
+                                    </div>
+                                    <button type="button" class="btn btn-md btn-primary">장바구니에 담기</button>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <a href="#" class="product">
+                                    <div class="product-img">
+                                        <img src="img/product-img-01.png" alt="">
+                                    </div>
+                                    <div class="product-text">
+                                        <h6 class="product-title">ACOUSTIC STAND ALONE</h6>
+                                        <b class="product-price">₩1,499,000</b>
+                                    </div>
+                                    <button type="button" class="btn btn-md btn-primary">장바구니에 담기</button>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <a href="#" class="product">
+                                    <div class="product-img">
+                                        <img src="img/product-img-01.png" alt="">
+                                    </div>
+                                    <div class="product-text">
+                                        <h6 class="product-title">ACOUSTIC STAND ALONE</h6>
+                                        <b class="product-price">₩1,499,000</b>
+                                    </div>
+                                    <button type="button" class="btn btn-md btn-primary">장바구니에 담기</button>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="more-products">더 많은 제품 표시<img src="img/ico/i-chevron-down-p.svg" alt=""></a>
+                    </div>
+                </div>
+                
+                <div class="acc-wrap">
+                    <div class="container">
+                        <div class="accordion">
+                            <h4 class="accordion-header">구입 관련 질문</h4>
+                            <div class="accordion-content">
+                                <div class="sub-accordion">
+                                    <h6 class="sub-accordion-header">제품은 언제 받아볼 수 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">자택이 아닌 곳으로 제품을 배송받을 수 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙은 어디서 확인하나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙을 테스트 할 수 있는곳이 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙을 테스트 할 수 있는곳이 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙을 테스트 할 수 있는곳이 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙을 테스트 할 수 있는곳이 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                    <h6 class="sub-accordion-header">제품 스펙을 테스트 할 수 있는곳이 있나요?</h6>
+                                    <div class="sub-accordion-content">
+                                        <p>구입관련 질문 답변 입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <section class="join-wrap">
+                <div class="container">
+                    <div class="join">
+                        <h1>회원가입</h1>
+                        <p>이미 계정이 있으십니까? <a href="#">로그인</a></p>
+                        <div class="join-area">
+                            <div class="input-group">
+                                <label for="">이용자명<span>*</span></label>
+                                <input type="text" placeholder="이름을 입력하세요.">
+                                <small>이름을 입력해주세요.</small>
+                            </div>
+                            <div class="input-group">
+                                <label for="">아이디<span>*</span></label>
+                                <div class="input-area">
+                                    <input type="text" placeholder="아이디를 입력하세요.">
+                                    <button type="button" class="btn btn-md btn-gray">중복확인</button>
+                                </div>
+                                <small>중복된 아이디입니다.</small>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group">
+                                        <label for="">비밀번호<span>*</span></label>
+                                        <input type="password" placeholder="비밀번호를 입력하세요.">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group">
+                                        <label for="">비밀번호 확인<span>*</span></label>
+                                        <input type="password" placeholder="비밀번호를 다시 입력하세요.">
+                                        <!-- <small>비밀번호가 일치하지 않습니다.</small> -->
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="select-group error">
+                                        <label for="">국가<span>*</span></label>
+                                        <select name="" id="">
+                                            <option value="국가를 설정하세요.">국가를 설정하세요.</option>
+                                        </select>
+                                        <small>국가가 선택되지 않았습니다.</small>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group">
+                                        <label for="">생년월일</label>
+                                        <input type="text" placeholder="901216" maxlength="6">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group">
+                                        <label for="">전화번호<span>*</span></label>
+                                        <input type="text" placeholder="01012345678" maxlength="11">
+                                        <!-- <small>전화번호를 입력해주세요.</small> -->
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="input-group">
+                                        <label for="">이메일 주소<span>*</span></label>
+                                        <input type="text" placeholder="abc@gmail.com">
+                                        <!-- <small>이메일 주소를 입력해주세요.</small> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="">소속 회사/학교</label>
+                                <input type="text" placeholder="소속 회사 및 학교를 기입해주세요.">
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="check03">
+                                <label for="check03">뉴스레터 수신여부</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-join open-modal"
+                            data-modal-id="termModal">회원가입</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+    <!-- S : termModal :: 약관동의 -->
+    <div id="termModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>약관동의</h4>
+                    <div class="check-group">
+                        <input type="checkbox" id="checkAll">
+                        <label for="checkAll">이용약관, 개인정보 수집 이용에 모두 동의합니다.</label>
+                    </div>
+                    <div class="term-group">
+                        <div class="check-group">
+                            <input type="checkbox" id="check01" class="individual-check">
+                            <label for="check01">이용약관 동의<span>*</span></label>
+                        </div>
+                        <div class="term">
+                            <textarea name="" id="">제1조 목적
+
+본 이용약관은 “사이트명”(이하 “사이트)의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다. 
+제1조 목적
+
+본 이용약관은 “사이트명”(이하 “사이트)의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다. 
+                        </textarea>
+                        </div>
+                    </div>
+                    <div class="term-group">
+                        <div class="check-group">
+                            <input type="checkbox" id="check02" class="individual-check">
+                            <label for="check02">개인정보 수집 및 이용 동의<span>*</span></label>
+                        </div>
+                        <div class="term">
+                            <textarea name="" id="">제1조 목적
+
+본 이용약관은 “사이트명”(이하 “사이트)의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다. 
+제1조 목적
+
+본 이용약관은 “사이트명”(이하 “사이트)의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다. 
+                        </textarea>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-gray btn-md btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-primary btn-md">가입하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : termModal -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

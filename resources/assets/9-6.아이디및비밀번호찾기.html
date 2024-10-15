@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Linnaeus</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <main>
+            <section class="find-wrap">
+                <div class="container">
+                    <div class="find">
+                        <h1>아이디 및 비밀번호 찾기</h1>
+                        <p>신규 사용자이신가요? <a href="#">회원가입</a></p>
+                        <div class="find-area">
+                            <div class="find-cont">
+                                <h2>아이디 찾기</h2>
+                                <div class="input-wrap">
+                                    <!-- input error 시 class .input-group.error 후 error 문구 배치-->
+                                    <div class="input-group">
+                                        <input type="text" placeholder="이용자명">
+                                        <input type="text" placeholder="이메일 주소">
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg btn-login open-modal" data-modal-id="idFindModal">아이디 찾기</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="find-cont">
+                                <h2>비밀번호 찾기</h2>
+                                <div class="input-wrap">
+                                    <div class="input-group error">
+                                        <input type="text" placeholder="이용자명">
+                                        <input type="text" placeholder="아이디">
+                                        <input type="text" placeholder="이메일 주소">
+                                        <small>이용자명, 아이디 또는 이메일 주소를 잘못 입력했습니다.</small>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-lg btn-login open-modal" data-modal-id="pwFindModal">비밀번호 찾기</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+    </div>
+
+    <!-- S : idFindModal :: 아이디 찾기 -->
+    <div id="idFindModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>입력하신 <b>abc@gmail.com</b>로<br>아이디를 전송하였습니다.</p>
+                    <button type="button" class="btn btn-primary btn-md btn-modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : idFindModal -->
+
+    <!-- S : pwFindModal :: 비밀번호 찾기 -->
+    <div id="pwFindModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>입력하신 <b>abc@gmail.com</b>로<br>비밀번호를 전송하였습니다.</p>
+                    <button type="button" class="btn btn-primary btn-md btn-modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : pwFindModal -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
