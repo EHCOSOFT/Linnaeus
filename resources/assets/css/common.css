@@ -1606,12 +1606,63 @@ input::placeholder {
 }
 
 .modal-footer {
+    display: flex;
     justify-content: flex-end;
+    margin: 24px 0 0 0;
+}
+
+.note-modal .modal-body {
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+.note-modal .modal-body p {
+    padding: 0 8px 0 0;
+    text-align: left;
+}
+
+.note-modal .modal-body::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+}
+
+.note-modal .modal-body::-webkit-scrollbar-thumb {
+    background: var(--shark-30);
+    border-radius: 100px;
+}
+
+.note-modal .modal-body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 8px 0 0;
+}
+
+.note-modal .modal-body ul li {
+    border-bottom: 1px solid var(--shark-10);
+    padding: 0 0 16px 0;
+}
+
+.note-modal .modal-body ul li:last-child {
+    border: 0;
+}
+
+.note-modal .modal-body h3 {
+    font-size: var(--text-lg);
+    text-align: left;
+}
+
+.note-modal .modal-body p {
+    font-size: var(--text-md);
 }
 
 @media (min-width:992px) {
     .modal-content {
         padding: 40px;
+    }
+
+    .note-modal .modal-content {
+        max-width: 800px;
     }
 
     .modal-body {
