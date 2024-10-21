@@ -1824,6 +1824,10 @@ input::placeholder {
     text-align: center;
 }
 
+.cont-table table tr td.primary {
+    color: var(--primary);
+}
+
 .cont-table table tr td.ta-left {
     text-align: left;
 }

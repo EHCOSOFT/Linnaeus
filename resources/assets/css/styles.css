@@ -1527,3 +1527,99 @@
     justify-content: center;
     padding: 80px 0;
 }
+
+.inquiry-detail-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-detail-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inquiry-detail-header p {
+    align-items: center;
+    color: var(--shark-60);
+    display: flex;
+    font-size: var(--text-md);
+    gap: 8px;
+}
+
+.inquiry-detail-wrap hr {
+    color: var(--shark);
+    opacity: 0.2;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.inquiry-detail-body p {
+    color: var(--shark-60);
+    font-size: var(--text-md);
+}
+
+.inquiry-answer {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    margin: 40px 0;
+}
+
+.inquiry-answer h5 {
+    color: var(--shark-80);
+    font-size: var(--text-md);
+    font-weight: 500;
+}
+
+.inquiry-answer h6 {
+    color: var(--shark-60);
+    font-size: var(--text-sm);
+    font-weight: 400;
+}
+
+.inquiry-answer p {
+    color: var(--shark-60);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    margin: 12px 0 0 0;
+}
+
+.inquiry-detail-wrap button {
+    width: max-content;
+}
+
+@media (min-width:992px) {
+    .inquiry-detail-header p {
+        font-size: var(--text-lg);
+    }
+
+    .inquiry-detail-wrap hr {
+        color: var(--shark);
+        opacity: 0.2;
+        margin: 28px 0;
+        width: 100%;
+    }
+
+    .inquiry-detail-body p {
+        font-size: var(--text-lg);
+    }
+
+    .inquiry-answer {
+        margin: 60px 0;
+    }
+
+    .inquiry-answer h5 {
+        font-size: var(--text-lg);
+        line-height: 20px;
+    }
+
+    .inquiry-answer h6 {
+        font-size: var(--text-md);
+        line-height: 20px;
+    }
+
+    .inquiry-answer p {
+        font-size: var(--text-md);
+    }
+}
